@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gulf Profits - Access Your Training</title>
+    <meta name="description" content="Thank you for your purchase. Access your Gulf Profits Method training instantly.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        
+        .thank-you-headline {
+            font-size: clamp(32px, 5vw, 48px);
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .thank-you-subheadline {
+            font-size: clamp(18px, 3vw, 24px);
+            color: #00FF88;
+            margin-bottom: 40px;
+        }
+        
+        .access-box {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+        
+        .access-headline {
+            color: #FFD700;
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        .access-button {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .access-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 215, 0, 0.4);
+        }
+        
+        .next-steps {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        
+        .next-steps-headline {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+        }
+        
+        .step-number {
+            background: #FFD700;
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            color: #00FF88;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .step-description {
+            color: #E0E0E0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .important-info {
+            background: rgba(255, 68, 68, 0.1);
+            border: 1px solid #FF4444;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .important-headline {
+            color: #FF4444;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .important-text {
+            color: #E0E0E0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .bonus-section {
+            background: linear-gradient(45deg, rgba(0, 255, 136, 0.1), rgba(0, 200, 100, 0.1));
+            border: 2px solid #00FF88;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .bonus-headline {
+            color: #00FF88;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .bonus-item {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            color: #E0E0E0;
+        }
+        
+        .bonus-item::before {
+            content: "🎁";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .contact-support {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .support-headline {
+            color: #FFD700;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .support-text {
+            color: #E0E0E0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .email-delivered {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00FF88;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .email-headline {
+            color: #00FF88;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .email-text {
+            color: #E0E0E0;
+            font-size: 14px;
+        }
+        
+        .social-proof {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #FFD700;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .testimonial-text {
+            color: #E0E0E0;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .testimonial-author {
+            color: #FFD700;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Success Section -->
+        <div class="success-icon">🎉</div>
+        <h1 class="thank-you-headline">Congratulations! Your Order Is Complete</h1>
+        <p class="thank-you-subheadline">You now have access to The Gulf Profits Method</p>
+        
+        <!-- Email Confirmation -->
+        <div class="email-delivered">
+            <div class="email-headline">📧 Confirmation Email Sent</div>
+            <div class="email-text">
+                Check your email for your receipt and access details. 
+                If you don't see it in 5 minutes, check your spam/promotions folder.
+            </div>
+        </div>
+        
+        <!-- Access Box -->
+        <div class="access-box">
+            <h2 class="access-headline">🚀 Access Your Training Now</h2>
+            <p style="color: #E0E0E0; margin-bottom: 25px;">
+                Click below to access your complete Gulf Profits Method training materials:
+            </p>
+            
+            <a href="#" class="access-button" onclick="accessTraining()">
+                📚 Access Training Portal
+            </a>
+            <br>
+            <a href="#" class="access-button" onclick="downloadGuide()" style="background: linear-gradient(45deg, #00FF88, #00CC66);">
+                📥 Download PDF Guide
+            </a>
+        </div>
+        
+        <!-- Next Steps -->
+        <div class="next-steps">
+            <h3 class="next-steps-headline">Your Next Steps to Success</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Download and Review the Main Guide</div>
+                    <div class="step-description">
+                        Start with the 45-page comprehensive PDF. Read chapters 1-4 today to understand 
+                        the opportunity and market dynamics.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Watch the Setup Videos</div>
+                    <div class="step-description">
+                        Follow along with the 3-hour video course to set up your legal framework, 
+                        banking, and initial developer partnerships.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Use the Developer Database</div>
+                    <div class="step-description">
+                        Start with the top 5 developers from our database. Use the provided scripts 
+                        to introduce yourself and set up your referral accounts.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">Launch Your Lead Generation</div>
+                    <div class="step-description">
+                        Implement the lead generation system to start attracting qualified Dubai 
+                        property buyers to your funnel.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <div class="step-title">Make Your First Commission</div>
+                    <div class="step-description">
+                        Most students see their first commission within 30-90 days. Follow the system 
+                        exactly as outlined for best results.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bonus Section -->
+        <div class="bonus-section">
+            <h3 class="bonus-headline">🎁 Exclusive Bonuses Included</h3>
+            
+            <div class="bonus-item">
+                <strong>VIP WhatsApp Group Access</strong> - Connect with other Gulf Profits students and get real-time support
+            </div>
+            
+            <div class="bonus-item">
+                <strong>Monthly Market Update Reports</strong> - Stay ahead of Dubai market trends and new opportunities
+            </div>
+            
+            <div class="bonus-item">
+                <strong>Commission Calculator Tool</strong> - Quickly estimate earnings potential for different property types
+            </div>
+            
+            <div class="bonus-item">
+                <strong>Legal Template Library</strong> - Pre-written contracts and agreement templates for your business
+            </div>
+        </div>
+        
+        <!-- Important Info -->
+        <div class="important-info">
+            <div class="important-headline">⚠️ Important: Save These Details</div>
+            <div class="important-text">
+                Bookmark this page and save your login details from the email. You'll have lifetime access 
+                to all materials and updates. If you ever lose access, contact support with your order number.
+            </div>
+        </div>
+        
+        <!-- Social Proof -->
+        <div class="social-proof">
+            <div class="testimonial-text">
+                "I followed the exact steps in Gulf Profits and made my first $18K commission in month 3. 
+                The system works if you work the system. Thank you for changing my life!"
+            </div>
+            <div class="testimonial-author">- Sarah M., New Customer</div>
+        </div>
+        
+        <!-- Support -->
+        <div class="contact-support">
+            <div class="support-headline">🆘 Need Help?</div>
+            <div class="support-text">
+                Our support team is here to help you succeed. Email us at <strong>support@gulfprofits.com</strong> 
+                with any questions or technical issues. We typically respond within 2-4 hours during business hours.
+            </div>
+        </div>
+        
+        <!-- Additional CTA -->
+        <div style="margin: 40px 0; padding: 30px; background: rgba(255, 215, 0, 0.1); border-radius: 15px;">
+            <h3 style="color: #FFD700; font-size: 24px; margin-bottom: 20px;">Ready to Start Earning?</h3>
+            <p style="color: #E0E0E0; margin-bottom: 25px; font-size: 16px;">
+                Don't wait - the Dubai market is moving fast. Start implementing today and join the hundreds 
+                of people already earning commissions with this system.
+            </p>
+            
+            <a href="#" class="access-button" onclick="accessTraining()" style="font-size: 18px;">
+                🚀 Start Your Training Now
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div style="margin: 40px 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #666; font-size: 12px;">
+            <p>© 2026 Gulf Profits Method. All Rights Reserved.<br>
+            Order #GP-<?php echo rand(100000, 999999); ?> | Purchase Date: <?php echo date('F j, Y'); ?></p>
+        </div>
+    </div>
+    
+    <script>
+        function accessTraining() {
+            // Simulate access to training portal
+            alert('Training portal access would be provided here. This would redirect to your member\'s area.');
+            // In real implementation: window.location.href = 'https://members.gulfprofits.com';
+        }
+        
+        function downloadGuide() {
+            // Simulate download
+            alert('PDF download would start here. This would trigger the main guide download.');
+            // In real implementation: window.location.href = 'download-link.pdf';
+        }
+        
+        // Auto-scroll to access box after 3 seconds
+        setTimeout(() => {
+            document.querySelector('.access-box').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+            });
+        }, 3000);
+        
+        // Simulate order details
+        const orderNumber = 'GP-' + Math.floor(Math.random() * 900000) + 100000;
+        const currentDate = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        
+        // Update footer with dynamic info
+        const footer = document.querySelector('div[style*="border-top"]');
+        if (footer) {
+            footer.innerHTML = `
+                <p>© 2026 Gulf Profits Method. All Rights Reserved.<br>
+                Order #${orderNumber} | Purchase Date: ${currentDate}</p>
+            `;
+        }
+        
+        // Track page view for analytics (placeholder)
+        console.log('Thank you page loaded - Order:', orderNumber);
+        
+        // Prevent back button issues
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+</body>
+</html>
