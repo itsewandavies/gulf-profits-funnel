@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gulf Bridging - Access Your Training</title>
+    <meta name="description" content="Thank you for your purchase. Access your Gulf Bridging training instantly.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #1a202c;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Success Card */
+        .success-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #10b981;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px auto;
+            animation: bounce 1s ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .checkmark {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 800;
+        }
+        
+        .success-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a202c;
+            margin-bottom: 16px;
+        }
+        
+        .success-subtitle {
+            font-size: 18px;
+            color: #10b981;
+            margin-bottom: 32px;
+            font-weight: 600;
+        }
+        
+        .order-details {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        
+        .order-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 16px;
+        }
+        
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .item-name {
+            font-size: 14px;
+            color: #4a5568;
+        }
+        
+        .item-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a202c;
+        }
+        
+        .order-total {
+            border-top: 1px solid #e2e8f0;
+            padding-top: 12px;
+            margin-top: 12px;
+        }
+        
+        /* Access Section */
+        .access-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        
+        .access-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        
+        .access-description {
+            font-size: 16px;
+            color: #4a5568;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .access-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        
+        .access-button {
+            background: #2563eb;
+            color: #fff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        
+        .access-button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
+        }
+        
+        .access-button.secondary {
+            background: #10b981;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+        
+        .access-button.secondary:hover {
+            background: #059669;
+            box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
+        }
+        
+        /* Email Notice */
+        .email-notice {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .email-notice-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+        
+        .email-notice-text {
+            font-size: 14px;
+            color: #92400e;
+        }
+        
+        /* Next Steps */
+        .next-steps {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        
+        .steps-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 12px;
+        }
+        
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: #2563eb;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+        
+        .step-description {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        /* Support Section */
+        .support-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        
+        .support-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 16px;
+        }
+        
+        .support-text {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        .support-contact {
+            background: #ecfdf5;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 14px;
+            color: #047857;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+            margin-top: 40px;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .success-card {
+                padding: 40px 20px;
+            }
+            
+            .access-section,
+            .next-steps,
+            .support-section {
+                padding: 24px;
+            }
+            
+            .access-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .access-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .step {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Success Card -->
+        <div class="success-card">
+            <div class="success-icon">
+                <div class="checkmark">✓</div>
+            </div>
+            
+            <h1 class="success-title">Payment Successful!</h1>
+            <p class="success-subtitle">Welcome to Gulf Bridging</p>
+            
+            <div class="order-details">
+                <div class="order-title">Order Summary</div>
+                
+                <div class="order-item">
+                    <span class="item-name">Gulf Bridging Complete System</span>
+                    <span class="item-value">$67.00</span>
+                </div>
+                
+                <div class="order-item">
+                    <span class="item-name">Bonus Modules (5 included)</span>
+                    <span class="item-value">FREE</span>
+                </div>
+                
+                <div class="order-item order-total">
+                    <span class="item-name"><strong>Total Paid</strong></span>
+                    <span class="item-value"><strong>$67.00</strong></span>
+                </div>
+                
+                <div style="margin-top: 12px; font-size: 12px; color: #6b7280;">
+                    Order #GB-<span id="orderNumber"></span> | <span id="orderDate"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Notice -->
+        <div class="email-notice">
+            <div class="email-notice-title">📧 Check Your Email</div>
+            <div class="email-notice-text">
+                Your access details and receipt have been sent to your email. 
+                If you don't see it within 5 minutes, please check your spam folder.
+            </div>
+        </div>
+
+        <!-- Access Section -->
+        <div class="access-section">
+            <h2 class="access-title">🚀 Access Your Training Now</h2>
+            <p class="access-description">
+                Your Gulf Bridging system is ready. Click below to access your complete training materials 
+                and start your journey to earning Dubai real estate commissions.
+            </p>
+            
+            <div class="access-buttons">
+                <a href="#" class="access-button" onclick="accessMembersArea()">
+                    🏫 Access Members Area
+                </a>
+                <a href="#" class="access-button secondary" onclick="downloadResources()">
+                    📥 Download Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="next-steps">
+            <h3 class="steps-title">Your Success Roadmap</h3>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Complete Your Setup (Today)</div>
+                    <div class="step-description">
+                        Download the main guide and watch the setup videos. Complete your legal framework 
+                        and banking arrangements using our templates.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Connect with Developers (Week 1)</div>
+                    <div class="step-description">
+                        Use our Developer Database to establish relationships with high-paying Dubai developers. 
+                        Follow the provided scripts and introduction templates.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Launch Lead Generation (Week 2)</div>
+                    <div class="step-description">
+                        Implement our lead generation system to start attracting qualified international 
+                        buyers. Begin with the organic methods, then scale with paid advertising.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">Make Your First Commission (Month 1-3)</div>
+                    <div class="step-description">
+                        Bridge your first buyers with developers and earn your initial commissions. 
+                        Most students see their first $15K+ commission within 90 days.
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <div class="step-title">Scale to $25K+ Monthly (Month 3+)</div>
+                    <div class="step-description">
+                        Use the scaling strategies and luxury property modules to increase your 
+                        monthly commission income to $25K and beyond.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="support-section">
+            <h3 class="support-title">🆘 Need Help Getting Started?</h3>
+            <p class="support-text">
+                Our support team is here to ensure your success. We typically respond to all questions 
+                within 2-4 hours during business hours.
+            </p>
+            <div class="support-contact">
+                📧 Email us at: support@gulfbridging.com<br>
+                🔗 Join our VIP community for peer support and updates
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2026 Gulf Bridging. All rights reserved.</p>
+            <p>This training is for educational purposes. Results not typical and may vary.</p>
+            <p>You have lifetime access to all materials and future updates.</p>
+        </div>
+    </div>
+
+    <script>
+        // Generate order number and date
+        function generateOrderDetails() {
+            const orderNumber = 'GB-' + Math.floor(Math.random() * 900000) + 100000;
+            const currentDate = new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            
+            document.getElementById('orderNumber').textContent = orderNumber.replace('GB-', '');
+            document.getElementById('orderDate').textContent = currentDate;
+        }
+
+        function accessMembersArea() {
+            // In production, this would redirect to the actual members area
+            alert('Members area access would be provided here. This would redirect to your learning management system.');
+            console.log('Members area access requested');
+        }
+
+        function downloadResources() {
+            // In production, this would trigger downloads or redirect to download page
+            alert('Resource downloads would be provided here. This could trigger PDF downloads or redirect to a download portal.');
+            console.log('Resource download requested');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            generateOrderDetails();
+            
+            // Prevent back button navigation
+            history.pushState(null, null, location.href);
+            window.onpopstate = function () {
+                history.go(1);
+            };
+            
+            // Track page load
+            console.log('Success page loaded');
+            
+            // Focus on main access button after 2 seconds
+            setTimeout(() => {
+                document.querySelector('.access-button').focus();
+            }, 2000);
+        });
+
+        // Track button interactions
+        document.querySelectorAll('.access-button').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('Access button clicked:', this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>

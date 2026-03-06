@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Profits Method - Earn $15K Monthly Dubai Real Estate Commissions</title>
-    <meta name="description" content="British expat reveals how to earn $5K-$25K monthly in Dubai real estate commissions without owning property or real estate experience.">
+    <title>Gulf Bridging - The Complete System for Dubai Real Estate Commissions</title>
+    <meta name="description" content="Learn the revolutionary Gulf Bridging system for earning $5K-$25K monthly in Dubai real estate commissions without owning property.">
     
     <style>
         * {
@@ -14,623 +14,864 @@
         }
         
         body {
-            font-family: 'Georgia', serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            background: #000;
-            color: #fff;
-            overflow-x: hidden;
+            color: #333;
+            background: #fff;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        /* HERO SECTION - STOP TRAFFIC DEAD */
-        .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="%23FFD700" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
-        .breaking-badge {
-            background: #FF4444;
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #2563eb;
+        }
+        
+        .secure-badge {
+            background: #10b981;
             color: #fff;
-            padding: 12px 25px;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            display: inline-block;
-            text-transform: uppercase;
-            animation: pulse 2s infinite;
-            position: relative;
-            z-index: 2;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.05); }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
         }
         
-        .main-headline {
+        .hero-headline {
             font-size: clamp(32px, 5vw, 54px);
-            font-weight: bold;
-            line-height: 1.1;
-            margin-bottom: 25px;
-            color: #FFD700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            position: relative;
-            z-index: 2;
-        }
-        
-        .sub-headline {
-            font-size: clamp(18px, 3vw, 28px);
-            color: #E0E0E0;
-            margin-bottom: 40px;
-            font-style: italic;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .proof-bar {
-            background: rgba(255, 215, 0, 0.15);
-            border: 2px solid #FFD700;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px auto;
-            max-width: 600px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .proof-text {
-            color: #FFD700;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        
-        /* ATTENTION-GRABBING SECTION */
-        .attention-section {
-            background: #1a1a1a;
-            padding: 50px 20px;
-            border-top: 3px solid #FFD700;
-            border-bottom: 3px solid #FFD700;
-        }
-        
-        .attention-headline {
-            color: #FF4444;
-            font-size: clamp(28px, 4vw, 42px);
-            text-align: center;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-        
-        .story-text {
-            font-size: 20px;
-            line-height: 1.8;
-            color: #E0E0E0;
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 40px auto;
-        }
-        
-        /* BULLETS OF DESIRE */
-        .bullets-section {
-            background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
-            padding: 50px 20px;
-        }
-        
-        .bullets-headline {
-            color: #FFD700;
-            font-size: clamp(24px, 3.5vw, 36px);
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: bold;
-        }
-        
-        .bullets-container {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-        
-        .bullet {
-            margin: 20px 0;
-            padding: 20px;
-            background: rgba(255, 215, 0, 0.05);
-            border-left: 4px solid #FFD700;
-            border-radius: 8px;
-            position: relative;
-            padding-left: 60px;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #fff;
-        }
-        
-        .bullet::before {
-            content: "✓";
-            color: #00FF88;
-            font-weight: bold;
-            font-size: 24px;
-            position: absolute;
-            left: 20px;
-            top: 20px;
-        }
-        
-        /* SOCIAL PROOF */
-        .testimonials-section {
-            background: #0f0f0f;
-            padding: 50px 20px;
-        }
-        
-        .testimonials-headline {
-            color: #FFD700;
-            font-size: clamp(24px, 3.5vw, 36px);
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: bold;
-        }
-        
-        .testimonial {
-            background: #2a2a2a;
-            padding: 30px;
-            border-left: 5px solid #FFD700;
-            margin: 30px auto;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            color: #E0E0E0;
-        }
-        
-        .testimonial-author {
-            color: #FFD700;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        /* URGENCY SECTION */
-        .urgency-section {
-            background: linear-gradient(45deg, #FF4444, #CC0000);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .urgency-headline {
-            color: #fff;
-            font-size: clamp(24px, 3.5vw, 36px);
+            font-weight: 800;
+            line-height: 1.2;
             margin-bottom: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
         }
         
-        .urgency-text {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #fff;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* PRICING SECTION */
-        .pricing-section {
-            background: linear-gradient(135deg, #1a1a2e, #2d1a69);
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .pricing-headline {
-            color: #fff;
-            font-size: clamp(24px, 3.5vw, 36px);
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-        
-        .price-comparison {
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 40px;
-            max-width: 500px;
-            margin: 0 auto 40px auto;
-        }
-        
-        .old-price {
-            text-decoration: line-through;
-            color: #ccc;
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        
-        .new-price {
-            color: #FFD700;
-            font-size: 56px;
-            font-weight: bold;
-            margin: 20px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        
-        .price-justification {
-            color: #E0E0E0;
-            font-size: 18px;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-        
-        /* CTA BUTTON */
-        .cta-button {
-            background: linear-gradient(45deg, #00FF88, #00CC66);
-            color: #000;
-            padding: 25px 50px;
-            font-size: 24px;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
-            margin: 20px 0;
-        }
-        
-        .cta-button:hover {
-            background: linear-gradient(45deg, #00CC66, #009944);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(0, 255, 136, 0.4);
-        }
-        
-        /* URGENCY TIMER */
-        .urgency-timer {
-            background: #FF4444;
-            padding: 20px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 20px 0;
-            border-radius: 10px;
-            animation: pulse 2s infinite;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* GUARANTEE */
-        .guarantee-section {
-            background: linear-gradient(45deg, #1a4a1a, #0d2d0d);
-            border: 3px solid #00FF88;
-            padding: 40px;
-            text-align: center;
-            border-radius: 15px;
-            margin: 40px auto;
-            max-width: 600px;
-        }
-        
-        .guarantee-headline {
-            color: #00FF88;
-            font-size: clamp(22px, 3vw, 32px);
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        
-        .guarantee-text {
-            color: #E0E0E0;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        
-        /* FINAL PUSH */
-        .final-push {
-            background: linear-gradient(135deg, #FFD700, #FFA500);
-            padding: 50px 20px;
-            text-align: center;
-            color: #000;
-        }
-        
-        .final-push-headline {
-            font-size: clamp(26px, 4vw, 38px);
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
-        
-        .final-push-text {
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            max-width: 700px;
+        .hero-subheadline {
+            font-size: clamp(18px, 3vw, 24px);
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        .final-cta {
-            background: #FF4444;
-            color: #fff;
-            padding: 25px 50px;
-            font-size: 24px;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 25px rgba(255, 68, 68, 0.4);
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
         }
         
-        /* FOOTER */
-        .footer {
-            background: #0a0a0a;
-            padding: 30px 20px;
+        .stat {
             text-align: center;
-            color: #666;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #fbbf24;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+        
+        /* Video Section */
+        .video-section {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+        
+        .video-container {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .play-button:hover {
+            transform: scale(1.1);
+            background: #fff;
+        }
+        
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 25px solid #2563eb;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+        
+        .video-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1f2937;
+        }
+        
+        .video-description {
+            font-size: 18px;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Testimonials Grid */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .testimonial {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        
+        .testimonial-info h4 {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 4px;
+        }
+        
+        .testimonial-info p {
+            color: #6b7280;
             font-size: 14px;
         }
         
-        /* RESPONSIVE */
+        .testimonial-text {
+            color: #4b5563;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-result {
+            background: #ecfdf5;
+            color: #059669;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        /* Process Section */
+        .process-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            color: #1f2937;
+            margin-bottom: 60px;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f9fafb;
+            border-radius: 12px;
+            position: relative;
+        }
+        
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            margin: 0 auto 20px auto;
+        }
+        
+        .process-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        
+        .process-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* Business Model Section */
+        .business-section {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+        
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .business-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .business-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px auto;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #fff;
+        }
+        
+        .business-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        
+        .business-description {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Results Section */
+        .results-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: #fff;
+        }
+        
+        .results-content {
+            text-align: center;
+        }
+        
+        .results-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #fbbf24;
+        }
+        
+        .results-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .results-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .result-stat {
+            text-align: center;
+        }
+        
+        .result-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #fbbf24;
+            margin-bottom: 8px;
+        }
+        
+        .result-label {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 0;
+        }
+        
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: #6b7280;
+            margin-top: 12px;
+            line-height: 1.7;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-toggle {
+            font-size: 20px;
+            font-weight: 300;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            background: #fbbf24;
+            color: #1f2937;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(251, 191, 36, 0.4);
+            background: #f59e0b;
+        }
+        
+        .guarantee {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: #9ca3af;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .bullet {
-                padding: 15px;
-                padding-left: 45px;
-                font-size: 16px;
+            .hero-stats {
+                gap: 20px;
             }
             
-            .bullet::before {
-                left: 15px;
-                font-size: 20px;
+            .video-placeholder {
+                height: 300px;
             }
             
-            .testimonial {
-                padding: 20px;
+            .testimonials-grid {
+                grid-template-columns: 1fr;
             }
             
-            .cta-button, .final-cta {
-                padding: 20px 30px;
-                font-size: 18px;
+            .process-grid,
+            .business-grid,
+            .results-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .results-title {
+                font-size: 32px;
+            }
+            
+            .cta-title {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- HERO SECTION -->
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🏗 GULF BRIDGING</div>
+                <div class="secure-badge">
+                    🔒 SECURE TRAINING
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
     <div class="hero">
         <div class="container">
-            <div class="breaking-badge">🔥 BREAKING: DUBAI REAL ESTATE BOOM</div>
-            <h1 class="main-headline">British Expat Reveals How He Earns $23,400 Per Month in Dubai Real Estate Commissions...</h1>
-            <p class="sub-headline">WITHOUT Owning Property, Speaking Arabic, or Having Real Estate Experience</p>
+            <h1 class="hero-headline">The #1 System for Dubai Real Estate Commission Bridging</h1>
+            <p class="hero-subheadline">Learn how to earn $5K-$25K monthly by bridging international buyers with Dubai developers - without owning property or having real estate experience</p>
             
-            <div class="proof-bar">
-                <div class="proof-text">
-                    ⚡ $50.2 BILLION in Dubai property sales in 2023 alone<br>
-                    💰 Average commission per referral: $15,000 - $126,000<br>
-                    🚀 68% of buyers are foreigners (YOUR target market)<br>
-                    🏆 0% income tax in Dubai = keep 100% of your commissions
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">$50.2B</div>
+                    <div class="stat-label">Dubai Property Sales (2023)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">68%</div>
+                    <div class="stat-label">International Buyers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">2-6%</div>
+                    <div class="stat-label">Commission Rates</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$15K+</div>
+                    <div class="stat-label">Average Commission</div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- ATTENTION SECTION -->
-    <div class="attention-section">
+
+    <!-- Video Section -->
+    <div class="video-section">
         <div class="container">
-            <h2 class="attention-headline">The Secret Dubai Developers Don't Want You To Know...</h2>
-            <p class="story-text">
-                While everyone's fighting to scrape together $500K+ to BUY Dubai property... 
-                a small group of smart expats are earning 6-figure yearly incomes by simply 
-                CONNECTING property buyers with developers. No massive investment required. 
-                No Arabic needed. No real estate license necessary. Just pure profit.
-            </p>
-            
-            <p class="story-text">
-                <strong style="color: #FFD700;">Here's the shocking truth:</strong> Dubai developers are so desperate for international buyers, 
-                they'll pay YOU 2-6% commission just for making introductions. That's $15,000 to $126,000 
-                per successful referral. And with the market exploding, deals are closing faster than ever.
-            </p>
-        </div>
-    </div>
-    
-    <!-- BULLETS SECTION -->
-    <div class="bullets-section">
-        <div class="container">
-            <h3 class="bullets-headline">Here's What You Get Inside The Gulf Profits Method:</h3>
-            
-            <div class="bullets-container">
-                <div class="bullet">The "Developer Direct Database" - 47 Dubai developers actively paying 2-6% commissions (that's $15K-$126K per successful referral)</div>
+            <div class="video-container">
+                <h2 class="video-title">Watch How Gulf Bridging Works</h2>
+                <p class="video-description">Discover the exact system our students use to bridge international property buyers with Dubai developers and earn substantial commissions</p>
                 
-                <div class="bullet">My exact lead generation system that brings qualified Dubai property buyers straight to your inbox</div>
-                
-                <div class="bullet">The "Golden Visa Angle" - why 68% of international buyers will pay premium prices for speed and convenience</div>
-                
-                <div class="bullet">Complete legal framework documents to earn commissions as a foreigner (100% legitimate and above board)</div>
-                
-                <div class="bullet">The 15 highest-paying brokerage partnerships that welcome international referrers with open arms</div>
-                
-                <div class="bullet">Banking setup guide to seamlessly receive $50K+ monthly commission payments in Dubai</div>
-                
-                <div class="bullet">Tax optimization strategies (Dubai has 0% income tax - keep every penny!)</div>
-                
-                <div class="bullet">My "Luxury Property Funnel" specifically designed to target $2M+ deals for maximum commissions</div>
-                
-                <div class="bullet">Scripts and templates for connecting with high-net-worth international buyers</div>
-                
-                <div class="bullet">The "Expat Advantage" strategy - why being foreign actually HELPS you in this market</div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- TESTIMONIALS -->
-    <div class="testimonials-section">
-        <div class="container">
-            <h3 class="testimonials-headline">Real People, Real Results:</h3>
-            
-            <div class="testimonial">
-                <p class="testimonial-text">
-                    "I made my first $18,400 commission in month 3 using James's system. By month 12, I was earning $47,800 per month consistently. This year I'm on track for over $500K in total commissions. The Dubai market is absolutely insane right now - there's so much money flowing."
-                </p>
-                <p class="testimonial-author">- Sarah M., UK Marketing Consultant turned Dubai Commission Expert</p>
-            </div>
-            
-            <div class="testimonial">
-                <p class="testimonial-text">
-                    "$67,200 in commissions last month alone. I work maybe 10 hours per week now. The developers handle everything - contracts, legal, property management. I just connect qualified buyers and collect commission checks. This is the easiest money I've ever made in my life."
-                </p>
-                <p class="testimonial-author">- Ahmed K., Canadian-Lebanese Entrepreneur</p>
-            </div>
-            
-            <div class="testimonial">
-                <p class="testimonial-text">
-                    "Two deals closed this week: $23K and $31K commissions. I'm working from my laptop in Bali while earning more than my old corporate salary in London. The Gulf Profits system changed my entire life trajectory."
-                </p>
-                <p class="testimonial-author">- Marcus T., Former Finance Director, now Location Independent</p>
-            </div>
-        </div>
-    </div>
-    
-    <!-- URGENCY SECTION -->
-    <div class="urgency-section">
-        <div class="container">
-            <h3 class="urgency-headline">WARNING: This Window Is Closing FAST</h3>
-            <p class="urgency-text">
-                Dubai's real estate market is exploding. Property prices are up 23% year-over-year. 
-                More international buyers are flooding in every month. But here's the critical thing - 
-                developers are starting to cut commission rates as demand increases. The early window 
-                for maximum profits is closing. You need to get positioned NOW while commissions are 
-                still at their peak and competition is minimal.
-            </p>
-        </div>
-    </div>
-    
-    <!-- PRICING SECTION -->
-    <div class="pricing-section">
-        <div class="container">
-            <h3 class="pricing-headline">Normally $497... But Today Only:</h3>
-            
-            <div class="price-comparison">
-                <div class="old-price">$497</div>
-                <div class="new-price">Just $67</div>
-                <div class="price-justification">
-                    That's less than 0.3% of your first commission check!<br>
-                    (Most people make $15K+ on their first successful referral)
+                <div class="video-wrapper">
+                    <div class="video-placeholder" onclick="playVideo()">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
                 </div>
-                
-                <button class="cta-button" onclick="orderNow()">
-                    🚀 Get Instant Access - $67
-                </button>
             </div>
-            
-            <div class="urgency-timer">
-                ⚠️ PRICE RETURNS TO $497 IN 47 HOURS ⚠️
+
+            <!-- Testimonials -->
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">S</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>UK Marketing Consultant</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "I was skeptical about earning money without owning property, but Gulf Bridging changed everything. I made my first commission of $18,400 in month 3, and now I'm consistently earning $40K+ monthly."
+                    </div>
+                    <div class="testimonial-result">
+                        First Year Result: $312,000 in commissions
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Khalil</h4>
+                            <p>Canadian Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "The Gulf Bridging system is genius. I work maybe 10 hours per week connecting buyers with developers. Last month alone I earned $67K in commissions. This is the future of real estate."
+                    </div>
+                    <div class="testimonial-result">
+                        Monthly Average: $55,000 in commissions
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4>Marcus Thompson</h4>
+                            <p>Former Finance Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "I left my corporate job after 6 months of Gulf Bridging. Two deals closed this week: $23K and $31K commissions. I'm working from Bali while earning more than my old London salary."
+                    </div>
+                    <div class="testimonial-result">
+                        Location Independent: $85K monthly
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
-    <!-- GUARANTEE -->
-    <div class="container">
-        <div class="guarantee-section">
-            <h3 class="guarantee-headline">60-Day "Make Your Money Back" Guarantee</h3>
-            <p class="guarantee-text">
-                Use the Gulf Profits Method for 60 full days. If you don't make at least $67 in commissions 
-                (barely 0.4% of an average deal), I'll refund every single penny. No questions asked. 
-                But honestly? Most people following this system make their first $15K+ commission within 90 days. 
-                The risk is entirely on me.
-            </p>
-        </div>
-    </div>
-    
-    <!-- FINAL PUSH -->
-    <div class="final-push">
+
+    <!-- Process Section -->
+    <div class="process-section">
         <div class="container">
-            <h3 class="final-push-headline">This Is Your Dubai Gold Rush Moment</h3>
-            <p class="final-push-text">
-                Every major wealth transfer in history had an early window. Real estate in California in the 1950s. 
-                Tech stocks in the 1990s. Crypto in 2017. Dubai real estate commissions is happening RIGHT NOW. 
-                The international buyer flood is just beginning. The commission rates are at their peak. 
-                The competition is still minimal. Don't let this once-in-a-decade opportunity pass you by.
-            </p>
+            <h2 class="section-title">How Gulf Bridging Works</h2>
             
-            <button class="final-cta" onclick="orderNow()">
-                CLAIM YOUR SPOT NOW - $67
-            </button>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3 class="process-title">Connect with Developers</h3>
+                    <p class="process-description">Access our exclusive network of 47 Dubai developers actively seeking international buyers and offering 2-6% commissions.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3 class="process-title">Generate Quality Leads</h3>
+                    <p class="process-description">Use our proven lead generation system to attract qualified international buyers looking for Dubai property investments.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3 class="process-title">Bridge & Earn</h3>
+                    <p class="process-description">Connect qualified buyers with the right developers, facilitate the introduction, and collect your commission when deals close.</p>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <!-- FOOTER -->
+
+    <!-- Business Model Section -->
+    <div class="business-section">
+        <div class="container">
+            <h2 class="section-title">What Is Our Business Model?</h2>
+            
+            <div class="business-grid">
+                <div class="business-card">
+                    <div class="business-icon">🎯</div>
+                    <h3 class="business-title">Lead Generation</h3>
+                    <p class="business-description">Attract international investors seeking Dubai property through proven digital marketing strategies and organic traffic methods.</p>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon">🤝</div>
+                    <h3 class="business-title">Relationship Building</h3>
+                    <p class="business-description">Develop strong partnerships with Dubai developers and maintain long-term relationships with repeat buyers and referral sources.</p>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon">💼</div>
+                    <h3 class="business-title">Deal Facilitation</h3>
+                    <p class="business-description">Handle introductions, follow-ups, and communication to ensure smooth transactions between international buyers and developers.</p>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon">📈</div>
+                    <h3 class="business-title">Commission Collection</h3>
+                    <p class="business-description">Receive substantial commissions for successful transactions, with payments typically ranging from $15,000 to $126,000 per deal.</p>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon">⚖️</div>
+                    <h3 class="business-title">Legal Compliance</h3>
+                    <p class="business-description">Operate within full legal framework with proper documentation and compliance procedures for international commission earning.</p>
+                </div>
+
+                <div class="business-card">
+                    <div class="business-icon">🌍</div>
+                    <h3 class="business-title">Global Reach</h3>
+                    <p class="business-description">Work with investors from around the world while leveraging Dubai's position as a global business and investment hub.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results-section">
+        <div class="container">
+            <div class="results-content">
+                <h2 class="results-title">Real Results from Real Students</h2>
+                <p class="results-subtitle">Our Gulf Bridging system has generated millions in student commissions</p>
+                
+                <div class="results-stats">
+                    <div class="result-stat">
+                        <div class="result-number">$2.4M+</div>
+                        <div class="result-label">Total Student Commissions</div>
+                    </div>
+                    
+                    <div class="result-stat">
+                        <div class="result-number">180+</div>
+                        <div class="result-label">Successful Students</div>
+                    </div>
+                    
+                    <div class="result-stat">
+                        <div class="result-number">47</div>
+                        <div class="result-label">Developer Partners</div>
+                    </div>
+                    
+                    <div class="result-stat">
+                        <div class="result-number">23%</div>
+                        <div class="result-label">Average Deal Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Do I need real estate experience to get started?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        No real estate experience is required. Our system teaches you everything from the ground up, including how to communicate with developers, qualify buyers, and facilitate transactions. Many of our most successful students started with zero experience.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        How much money do I need to get started?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        You don't need any money for property investment. This is a commission-based business model where you earn by making introductions. The only investment is in the training system and potentially small marketing costs for lead generation.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Do I need to live in Dubai to do this?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, this business can be operated entirely online from anywhere in the world. Many of our successful students live in the UK, Canada, Australia, and other countries while earning Dubai commissions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        How long until I see my first commission?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most students see their first commission within 30-90 days of implementing the system. However, results vary based on how quickly you implement the training and your dedication to following the proven process.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Is this legal for international participants?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, earning referral commissions from Dubai developers is completely legal for international participants when done through the proper framework. Our training includes all necessary legal compliance and documentation procedures.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Gulf Bridging Journey?</h2>
+            <p class="cta-subtitle">Join hundreds of students already earning substantial Dubai commissions</p>
+            
+            <a href="checkout.html" class="cta-button">
+                Get Instant Access to Gulf Bridging
+            </a>
+            
+            <div class="guarantee">
+                🛡️ 60-Day Money-Back Guarantee | 🔒 Secure Checkout | ⚡ Instant Access
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <p>© 2026 Gulf Profits Method. All Rights Reserved.<br>
-            This site is not affiliated with any Dubai government entity or real estate developer.<br>
-            Results not typical. Your results may vary.</p>
+            <div class="footer-content">
+                <p>© 2026 Gulf Bridging. All rights reserved.</p>
+                <p>This site is not affiliated with any Dubai government entity or real estate developer.</p>
+                <p>Results not typical. Individual results may vary. This is not investment advice.</p>
+            </div>
         </div>
     </div>
-    
+
     <script>
-        function orderNow() {
-            // Redirect to checkout page
-            window.location.href = 'checkout.html';
+        function playVideo() {
+            // Placeholder for video functionality
+            alert('Video would play here. In production, this would integrate with your video hosting platform (Vimeo, Wistia, etc.)');
         }
-        
-        // Simple scroll animations
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.bullet, .testimonial');
+
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const toggle = element.querySelector('.faq-toggle');
             
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-toggle').textContent = '+';
                 }
             });
-        }
-        
-        // Set initial state for animations
-        document.querySelectorAll('.bullet, .testimonial').forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(30px)';
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        });
-        
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-        
-        // Urgency timer countdown
-        function updateTimer() {
-            const deadline = new Date();
-            deadline.setHours(deadline.getHours() + 47);
             
-            const now = new Date().getTime();
-            const distance = deadline.getTime() - now;
-            
-            const hours = Math.floor(distance / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            
-            const timer = document.querySelector('.urgency-timer');
-            if (timer) {
-                timer.innerHTML = `⚠️ PRICE RETURNS TO $497 IN ${hours}h ${minutes}m ⚠️`;
+            // Toggle current item
+            if (faqItem.classList.contains('active')) {
+                faqItem.classList.remove('active');
+                toggle.textContent = '+';
+            } else {
+                faqItem.classList.add('active');
+                toggle.textContent = '−';
             }
         }
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add any initialization code here
+            console.log('Gulf Bridging VSL loaded');
+        });
+
+        // Track video play attempts
+        let videoPlayAttempts = 0;
         
-        updateTimer();
-        setInterval(updateTimer, 60000);
+        function playVideo() {
+            videoPlayAttempts++;
+            console.log('Video play attempt:', videoPlayAttempts);
+            
+            // In production, replace this with actual video player
+            // Example: player.play() or redirect to video hosting platform
+            
+            alert('Video player would load here. Replace this with your video hosting solution (Vimeo, Wistia, YouTube Private, etc.)');
+        }
     </script>
 </body>
 </html>
